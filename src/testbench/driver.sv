@@ -22,8 +22,7 @@ class ram_driver;
             gen2drv_mbx.get(packet_drv);
             @(ram_vif.drv_cb);
 
-            // [CRITICAL FIX] Use BLOCKING assignment (=) so the clone captures the live reset!
-            packet_drv.reset = ram_vif.drv_cb.reset;
+                        packet_drv.reset = ram_vif.drv_cb.reset;
 
             ram_vif.drv_cb.write_enb <= packet_drv.write_enb;
             ram_vif.drv_cb.read_enb  <= packet_drv.read_enb;
@@ -33,7 +32,7 @@ class ram_driver;
             drv2ref_mbx.put(packet_drv.clone());
             ->drv_done;
 
-            // [CRITICAL FIX] Deassert read/write pins on the next clock cycle to prevent bus freezing!
+            
             @(ram_vif.drv_cb);
             ram_vif.drv_cb.write_enb <= 1'b0;
             ram_vif.drv_cb.read_enb  <= 1'b0;

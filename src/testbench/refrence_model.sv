@@ -19,8 +19,7 @@ class ram_reference_model;
             end
             else begin
                 packet_ref.data_out = 8'hZZ;
-                // [FIX] Removed "&& !read_enb" so simultaneous (1,1) is predicted cleanly!
-                if (packet_ref.write_enb) begin
+                                if (packet_ref.write_enb) begin
                     if (packet_ref.address < 32)
                         mem[packet_ref.address] = packet_ref.data_in;
                 end
