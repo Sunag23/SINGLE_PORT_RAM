@@ -1,1 +1,1 @@
-[VERIFICATION_TEST_PLAN](ttps://docs.google.com/spreadsheets/d/1OPDzcfIbV0Qjz3dSh6_ORtw-cqsBzcL0/edit?usp=drive_link&ouid=107859720970887020089&rtpof=true&sd=tru)
+[VERIFICATION_TEST_PLAN](https://docs.google.com/spreadsheets/d/1OPDzcfIbV0Qjz3dSh6_ORtw-cqsBzcL0/edit?usp=drive_link&ouid=107859720970887020089&rtpof=true&sd=tru)
